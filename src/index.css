@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Anybody:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-text-pri: #CBCBCB;
+  --color-text-sec: #888888;
+  --color-text-ter: #555555;
+  --color-pink-pri: #F18383;
+  --color-pink-sec: #402E2E;
+  --color-background: #121212;
+}
+
+html {
+  color: var(--color-text-pri);
+  background-color: var(--color-background);
+  font-family: 'Anybody';
+}
