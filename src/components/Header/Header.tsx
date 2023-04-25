@@ -8,7 +8,7 @@ import styles from './Header.module.css'
 export default function Header() {
     const [menuVisible, setMenuVisible] = useState(false)
 
-    const menuTransform = menuVisible ? '0' : '-200px'
+    const menuTransform = menuVisible ? '0' : '-230px'
 
     const toggleMenu = () => {
         setMenuVisible(!menuVisible)
