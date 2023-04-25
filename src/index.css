@@ -9,16 +9,16 @@
 }
 
 :root {
-  --color-text-pri: #CBCBCB;
-  --color-text-sec: #888888;
-  --color-text-ter: #555555;
-  --color-pink-pri: #F18383;
-  --color-pink-sec: #402E2E;
+  --color-white-pri: #CBCBCB;
+  --color-white-sec: #888888;
+  --color-white-ter: #555555;
+  --color-teal: #83F1F1;
   --color-background: #121212;
 }
 
 html {
-  color: var(--color-text-pri);
+  color: var(--color-white-pri);
   background-color: var(--color-background);
   font-family: 'Anybody';
+  scroll-behavior: smooth;
 }

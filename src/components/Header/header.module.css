@@ -1,0 +1,71 @@
+.header {
+    position: fixed;
+    top: 0;
+    right: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 53px;
+    width: 100%;
+    background: var(--color-background);
+}
+
+.iconDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.icon {
+    height: 54px;
+    fill: var(--color-white-sec);
+}
+
+.burgerBtn {
+    height: 20px;
+    width: 27px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.burgerDiv,
+.burgerDiv::before,
+.burgerDiv::after {
+    height: 2px;
+    background: var(--color-white-pri);
+}
+
+.burgerDiv {
+    position: relative;
+    width: 27px;
+}
+
+.burgerDiv::before,
+.burgerDiv::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+}
+
+.burgerDiv::before {
+    left: 0;
+    top: -7px;
+}
+
+.burgerDiv::after {
+    right: 0;
+    top: 7px;
+}
+
+.menu {
+    position: fixed;
+    top: 53px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: calc(100vh - 53px);
+    padding: 2rem 3rem;
+    background: var(--color-background);
+    transition: right 0.2s ease-in-out;
+}

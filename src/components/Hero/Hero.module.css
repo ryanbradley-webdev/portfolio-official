@@ -1,0 +1,44 @@
+.section {
+    margin-inline: 1rem;
+    margin-top: 53px;
+    padding-block: 34px;
+    padding-left: 8px;
+    background-image: url('/hero-bg-hd.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section h1 {
+  font-size: 72px;
+  line-height: 0.83em;
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.heroBtnDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: fit-content;
+    margin-inline: auto;
+    margin-block: 4.5rem 1rem;
+}
+
+.heroBtn {
+    color: var(--color-background);
+    background-color: var(--color-teal);
+    border: none;
+}
+
+.heroBtnVariant {
+    color: var(--color-teal);
+    background-color: #00000034;
+    backdrop-filter: blur(8px);
+    border: 2px solid var(--color-teal);
+}
