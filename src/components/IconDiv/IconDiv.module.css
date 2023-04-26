@@ -1,0 +1,9 @@
+.iconDiv {
+    padding: 8px;
+    border: 1px solid var(--color-white-pri);
+    border-radius: 8px;
+}
+
+.iconDiv img {
+    width: 24px;
+}

@@ -1,0 +1,27 @@
+.section {
+    padding: 1rem;
+}
+
+.headerDiv {
+    display: flex;
+    align-items: flex-end;
+    width: 85%;
+    margin-inline: auto 0;
+    margin-bottom: 24px;
+}
+
+.headerDiv div {
+    height: 2px;
+    flex-grow: 1;
+    background: var(--color-teal);
+    margin-bottom: 4.5px;
+    margin-right: -2px;
+}
+
+.headerDiv h3 {
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: -1px;
+    color: var(--color-teal);
+    text-align: right;
+}
