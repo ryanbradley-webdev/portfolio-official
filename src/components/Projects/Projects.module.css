@@ -1,0 +1,36 @@
+.selectorDiv hr {
+    width: 60%;
+    margin-block: 10px;
+    border-color: var(--color-white-sec);
+}
+
+.selectorContent {
+    overflow-y: hidden;
+    transition: height 0.3s ease;
+}
+
+.iconDiv {
+    display: flex;
+    gap: 12px;
+}
+
+.iconDiv img {
+    width: 24px;
+}
+
+.btnDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.btnDiv button {
+    width: 130px;
+    height: 35px;
+    font-size: 16px;
+    color: var(--color-teal);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-teal);
+    border-radius: 8px;
+}
