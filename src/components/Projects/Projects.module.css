@@ -1,3 +1,15 @@
+.selector * {
+    transition: all 0.3s ease;
+}
+
+.selector svg {
+    height: 16px;
+}
+
+.selector input {
+    visibility: hidden;
+}
+
 .selectorDiv hr {
     width: 60%;
     margin-block: 10px;
@@ -6,7 +18,6 @@
 
 .selectorContent {
     overflow-y: hidden;
-    transition: height 0.3s ease;
 }
 
 .iconDiv {
