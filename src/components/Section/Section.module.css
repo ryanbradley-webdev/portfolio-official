@@ -1,5 +1,7 @@
 .section {
+    margin-top: 2rem;
     padding: 1rem;
+    scroll-margin-top: 53px;
 }
 
 .headerDiv {
@@ -7,7 +9,7 @@
     align-items: flex-end;
     width: 85%;
     margin-inline: auto 0;
-    margin-bottom: 24px;
+    margin-bottom: 2rem;
 }
 
 .headerDiv div {

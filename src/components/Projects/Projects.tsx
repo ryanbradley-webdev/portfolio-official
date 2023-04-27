@@ -13,7 +13,7 @@ export default function Projects() {
     const [activeSelector, setActiveSelector] = useState('')
 
     return (
-        <Section>
+        <Section id='projects'>
 
             <SectionHeader>
                 Projects

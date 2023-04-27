@@ -9,7 +9,7 @@ import Services from './Services'
 
 export default function About() {
     return (
-        <Section>
+        <Section id='about'>
 
             <SectionHeader>
                 About

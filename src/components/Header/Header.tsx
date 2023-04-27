@@ -18,20 +18,20 @@ export default function Header() {
         <header className={styles.header}>
             <Burger onClick={toggleMenu} />
             <nav className={styles.menu} style={{ right: menuTransform }}>
-                <NavLink href='#about'>
+                <NavLink href='#about' onClick={toggleMenu}>
                     About
                 </NavLink>
-                <NavLink href='#projects'>
+                <NavLink href='#projects' onClick={toggleMenu}>
                     Projects
                 </NavLink>
-                <NavLink href='#connect'>
+                <NavLink href='#connect' onClick={toggleMenu}>
                     Connect
                 </NavLink>
                 <div className={styles.iconDiv}>
-                    <NavLink href='https://github.com/ryanbradley-webdev' external>
+                    <NavLink href='https://github.com/ryanbradley-webdev' external onClick={toggleMenu}>
                         <Github className={styles.icon} />
                     </NavLink>
-                    <NavLink href='https://www.linkedin.com/in/ryanbradley-webdev/' external>
+                    <NavLink href='https://www.linkedin.com/in/ryanbradley-webdev/' external onClick={toggleMenu}>
                         <Linkedin className={styles.icon} />
                     </NavLink>
                 </div>

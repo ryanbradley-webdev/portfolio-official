@@ -1,9 +1,14 @@
 import { ReactNode } from 'react'
 import styles from './Section.module.css'
 
-export default function Section({ children }: { children: ReactNode }) {
+type SectionProps = {
+    id: string,
+    children: ReactNode
+}
+
+export default function Section({ id, children }: SectionProps) {
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id={id}>
             {children}
         </section>
     )
