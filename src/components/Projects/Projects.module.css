@@ -12,17 +12,21 @@
 
 .selectorDiv hr {
     width: 60%;
-    margin-block: 10px;
+    margin-block: 6px 10px;
     border-color: var(--color-white-sec);
 }
 
 .selectorContent {
     overflow-y: hidden;
+    margin-inline: 20px;
+    font-size: 12px;
+    line-height: 16px;
 }
 
 .iconDiv {
     display: flex;
     gap: 12px;
+    margin-block: 16px;
 }
 
 .iconDiv img {

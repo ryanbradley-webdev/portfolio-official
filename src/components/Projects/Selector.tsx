@@ -1,15 +1,18 @@
 import { ReactNode, useState, useEffect, useRef } from 'react'
 import styles from './Projects.module.css'
 import Caret from '../../assets/Caret'
+import LinkBtn from './LinkBtn'
 
 type SelectorProps = {
     name: string,
     activeSelector: string,
     setActiveSelector: (selector: string) => void,
+    code: string,
+    website: string,
     children: ReactNode
 }
 
-export default function Selector({ name, activeSelector, setActiveSelector, children }: SelectorProps) {
+export default function Selector({ name, activeSelector, setActiveSelector, code, website, children }: SelectorProps) {
     const [isExpanded, setIsExpanded] = useState(false)
     const [height, setHeight] = useState('')
 
@@ -17,10 +20,12 @@ export default function Selector({ name, activeSelector, setActiveSelector, chil
 
     const localStyles = {
         name: {
+            fontSize: '20px',
             color: isExpanded ? '#FFFFFF' : ''
         },
         content: {
-            height: isExpanded ? height : '0'
+            height: isExpanded ? height : '0',
+            paddingBlock: isExpanded ? '16px' : '0'
         }
     }
 
@@ -29,10 +34,12 @@ export default function Selector({ name, activeSelector, setActiveSelector, chil
     }
 
     useEffect(() => {
-        if (contentRef.current) {
-            const height = `${contentRef.current.getBoundingClientRect().height}px`
-            setHeight(height)
-        }
+        setTimeout(() => {
+            if (contentRef.current) {
+                const height = `${contentRef.current.getBoundingClientRect().height + 32}px`
+                setHeight(height)
+            }
+        }, 250)
     }, [])
 
     useEffect(() => {
@@ -54,8 +61,12 @@ export default function Selector({ name, activeSelector, setActiveSelector, chil
                 <div ref={contentRef}>
                     {children}
                     <div className={styles.btnDiv}>
-                        <button>Source Code</button>
-                        <button>Visit Website</button>
+                        <LinkBtn url={code}>
+                            Source Code
+                        </LinkBtn>
+                        <LinkBtn url={website}>
+                            Visit Website
+                        </LinkBtn>
                     </div>
                 </div>
             </div>
