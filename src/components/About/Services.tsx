@@ -4,10 +4,11 @@ import Supabase from '/supabase.png'
 import Firebase from '/firebase.png'
 import Postgres from '/sql.png'
 import Mongo from '/mongodb.png'
+import styles from './About.module.css'
 
 export default function Services() {
     return (
-        <div>
+        <div className={styles.threeByThreeGrid}>
             <img src={Google} alt='Google' />
             <img src={AWS} alt='AWS' />
             <img src={Supabase} alt='Supabase' />

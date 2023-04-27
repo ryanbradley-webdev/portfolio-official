@@ -4,10 +4,11 @@ import Js from '/js.png'
 import Ts from '/ts.png'
 import Java from '/java.png'
 import Python from '/python.png'
+import styles from './About.module.css'
 
 export default function Languages() {
     return (
-        <div>
+        <div className={styles.threeByThreeGrid}>
             <img src={Html} alt='HTML' />
             <img src={Css} alt='CSS' />
             <img src={Js} alt='Javascript' />

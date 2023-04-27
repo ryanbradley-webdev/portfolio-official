@@ -4,6 +4,11 @@
     border-radius: 8px;
 }
 
+.iconDiv h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
 .iconDiv img {
     width: 24px;
 }
