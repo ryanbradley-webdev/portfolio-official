@@ -1,12 +1,18 @@
 .section {
-    margin-inline: 1rem;
-    margin-top: 53px;
-    padding-block: 34px;
-    padding-left: 8px;
-    background-image: url('/hero-bg-mobile.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  margin-inline: 1rem;
+  margin-top: 53px;
+  padding-block: 34px;
+  padding-left: 8px;
+  background-image: url('/hero-bg-mobile.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 481px) {
+  .section {
+    margin-top: 38px;
+  }
 }
 
 .section h1 {
@@ -22,23 +28,23 @@
 }
 
 .heroBtnDiv {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-    width: fit-content;
-    margin-inline: auto;
-    margin-block: 4.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: fit-content;
+  margin-inline: auto;
+  margin-block: 4.5rem 1rem;
 }
 
 .heroBtn {
-    color: var(--color-background);
-    background-color: var(--color-teal);
-    border: none;
+  color: var(--color-background);
+  background-color: var(--color-teal);
+  border: none;
 }
 
 .heroBtnVariant {
-    color: var(--color-teal);
-    background-color: #00000034;
-    backdrop-filter: blur(8px);
-    border: 2px solid var(--color-teal);
+  color: var(--color-teal);
+  background-color: #00000034;
+  backdrop-filter: blur(8px);
+  border: 2px solid var(--color-teal);
 }

@@ -11,15 +11,35 @@
     background: var(--color-background);
 }
 
+@media screen and (min-width: 481px) {
+    .header {
+        padding-right: 0;
+        height: fit-content;
+    }
+}
+
 .iconDiv {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
 }
 
+@media screen and (min-width: 481px) {
+    .iconDiv {
+        margin-top: 0;
+        gap: 8px;
+    }
+}
+
 .icon {
     height: 54px;
     fill: var(--color-white-sec);
+}
+
+@media screen and (min-width: 481px) {
+    .icon {
+        height: 20px;
+    }
 }
 
 .burgerBtn {
@@ -28,6 +48,12 @@
     background: none;
     border: none;
     cursor: pointer;
+}
+
+@media screen and (min-width: 481px) {
+    .burgerBtn {
+        display: none;
+    }
 }
 
 .burgerDiv,
@@ -69,4 +95,17 @@
     padding: 2rem 3rem;
     background: var(--color-background);
     transition: right 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 481px) {
+    .menu {
+        position: unset;
+        flex-direction: row;
+        align-items: center;
+        height: fit-content;
+        padding-block: 10px 4px;
+        padding-inline: 10px;
+        font-size: 16px;
+        border-bottom: 1px solid var(--color-white-sec);
+    }
 }
