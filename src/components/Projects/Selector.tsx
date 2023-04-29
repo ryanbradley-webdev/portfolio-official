@@ -30,17 +30,12 @@ export default function Selector({ name, activeSelector, setActiveSelector, code
     }
 
     const handleChange = () => {
+        if (contentRef.current) {
+            const height = `${contentRef.current.getBoundingClientRect().height + 32}px`
+            setHeight(height)
+        }
         setActiveSelector(name)
     }
-
-    useEffect(() => {
-        setTimeout(() => {
-            if (contentRef.current) {
-                const height = `${contentRef.current.getBoundingClientRect().height + 32}px`
-                setHeight(height)
-            }
-        }, 250)
-    }, [])
 
     useEffect(() => {
         if (activeSelector === name) {

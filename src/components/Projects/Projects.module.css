@@ -10,6 +10,13 @@
     visibility: hidden;
 }
 
+@media screen and (min-width: 481px) {
+    .selectorDiv {
+        max-width: 600px;
+        margin-inline: auto;
+    }
+}
+
 .selectorDiv hr {
     width: 60%;
     margin-block: 6px 10px;
@@ -23,6 +30,12 @@
     line-height: 16px;
 }
 
+@media screen and (min-width: 481px) {
+    .selectorContent {
+        font-size: 16px;
+    }
+}
+
 .iconDiv {
     display: flex;
     gap: 12px;
@@ -33,11 +46,28 @@
     width: 24px;
 }
 
+@media screen and (min-width: 481px) {
+    .iconDiv {
+        margin-block: 20px;
+    }
+
+    .iconDiv img {
+        width: 32px;
+    }
+}
+
 .btnDiv {
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: center;
+}
+
+@media screen and (min-width: 481px) {
+    .btnDiv {
+        flex-direction: row;
+        width: fit-content;
+    }
 }
 
 .btnDiv button {
