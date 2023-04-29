@@ -27,3 +27,13 @@
     color: var(--color-teal);
     text-align: right;
 }
+
+@media screen and (min-width: 481px) {
+    .headerDiv div {
+        margin-bottom: 8px;
+    }
+
+    .headerDiv h3 {
+        font-size: 32px;
+    }
+}

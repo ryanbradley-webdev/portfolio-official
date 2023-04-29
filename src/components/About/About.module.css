@@ -3,12 +3,34 @@
     font-weight: 300;
 }
 
+@media screen and (min-width: 481px) {
+    .leadingText {
+        width: fit-content;
+        margin-inline: auto;
+    }
+}
+
 .leadingText span {
     font-weight: 400;
 }
 
+@media screen and (min-width: 481px) {
+    .container {
+        max-width: 600px;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
 .mainText {
     margin-block: 42px;
+    margin-inline: auto;
     line-height: 20px;
 }
 
@@ -21,22 +43,36 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 16px;
+    margin-inline: auto;
+}
+
+@media screen and (min-width: 481px) {
+    .iconGrid {
+        width: fit-content;
+    }
+}
+
+.threeByThreeGrid,
+.twoByTwoGrid {
+    display: grid;
+    gap: 12px;
+    width: fit-content;
+    margin-inline: auto 0;
+    margin-top: 16px;
 }
 
 .threeByThreeGrid {
-    display: grid;
     grid-template-columns: repeat(3, 24px);
-    gap: 12px;
-    width: fit-content;
-    margin-inline: auto 0;
-    margin-top: 19px;
 }
 
 .twoByTwoGrid {
-    display: grid;
     grid-template-columns: repeat(2, 24px);
-    gap: 12px;
-    width: fit-content;
-    margin-inline: auto 0;
-    margin-top: 19px;
+}
+
+@media screen and (min-width: 481px) {
+    .threeByThreeGrid,
+    .twoByTwoGrid {
+        gap: 16px;
+        margin-inline: auto 8px;
+    }
 }
