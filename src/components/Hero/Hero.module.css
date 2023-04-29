@@ -12,6 +12,7 @@
 @media screen and (min-width: 481px) {
   .section {
     margin-top: 38px;
+    background-image: url('/hero-bg-tablet.png');
   }
 }
 
@@ -25,6 +26,26 @@
   font-size: 32px;
   font-style: italic;
   font-weight: 200;
+}
+
+@media screen and (min-width: 481px) {
+  .section h1 {
+    font-size: 100px;
+  }
+
+  .section h2 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 631px) {
+  .section h1 {
+    font-size: 130px;
+  }
+
+  .section h2 {
+    font-size: 55px;
+  }
 }
 
 .heroBtnDiv {
