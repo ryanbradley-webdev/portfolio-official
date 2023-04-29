@@ -26,19 +26,22 @@ export default function Connect() {
                 Connect
             </SectionHeader>
 
-            <h3 className={styles.h3}>
-                Thanks for viewing my portfolio!
-            </h3>
-
-            <div>
+            <div className={styles.container}>
 
                 <div>
+
+                    <h3 className={styles.h3}>
+                        Thanks for viewing my portfolio!
+                    </h3>
+
                     <p className={styles.paragraph}>
                         You can also connect with me on <LinkedIn /> or see the rest of my projects on <GitHub />.
                     </p>
+
                     <p className={styles.paragraph}>
                         To reach me directly you can send me a message using the form.
                     </p>
+
                 </div>
 
                 <form action="" onSubmit={handleSubmit} className={styles.form}>

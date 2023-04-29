@@ -1,11 +1,36 @@
+@media screen and (min-width: 481px) {
+    .container {
+        max-width: 600px;
+        margin-inline: auto;
+    }
+}
+
 .h3 {
+    font-weight: 400;
+    text-align: center;
     margin-bottom: 16px;
+}
+
+@media screen and (min-width: 481px) {
+    .h3 {
+        font-size: 24px;
+    }
 }
 
 .paragraph {
     font-size: 12px;
     line-height: 16px;
     margin-bottom: 16px;
+}
+
+@media screen and (min-width: 481px) {
+    .paragraph {
+        font-size: 16px;
+        max-width: 500px;
+        line-height: 20px;
+        margin-inline: auto;
+        margin-block: 20px;
+    }
 }
 
 .link {
