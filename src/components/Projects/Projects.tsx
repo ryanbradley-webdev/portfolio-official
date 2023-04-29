@@ -12,6 +12,12 @@ import styles from './Projects.module.css'
 export default function Projects() {
     const [activeSelector, setActiveSelector] = useState('')
 
+    const GitHub = () => (
+        <a href="https://github.com/ryanbradley-webdev" target='_blank' rel='noopener noreferrer' className={styles.link}>
+            GitHub
+        </a>
+    )
+
     return (
         <Section id='projects'>
 
@@ -20,6 +26,11 @@ export default function Projects() {
             </SectionHeader>
 
             <div className={styles.selectorDiv}>
+                
+                <h5 className={styles.h5}>
+                    Select a project to see a description and links to the source code and live demo.
+                </h5>
+
                 <Selector 
                     name='Makeup Yer Mind Blog' 
                     activeSelector={activeSelector} 
@@ -78,6 +89,10 @@ export default function Projects() {
                     
                 </Selector>
             </div>
+
+            <h5 className={styles.h5} style={{ textAlign: 'center', marginBottom: '0' }}>
+                To see more of my work, visit me on <GitHub />.
+            </h5>
 
         </Section>
     )

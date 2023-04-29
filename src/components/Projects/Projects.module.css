@@ -1,3 +1,22 @@
+.h5 {
+    margin-block: 24px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+@media screen and (min-width: 481px) {
+    .h5 {
+        font-size: 20px;
+    }
+}
+
+.link {
+    text-decoration: none;
+    font-style: italic;
+    color: var(--color-teal);
+    font-weight: 400;
+}
+
 .selector * {
     transition: all 0.3s ease;
 }
