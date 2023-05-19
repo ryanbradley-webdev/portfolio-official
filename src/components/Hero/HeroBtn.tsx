@@ -11,11 +11,13 @@ export default function HeroBtn({ href, variant, children }: HeroBtnProps) {
 
     const localStyles = {
         fontSize: '20px',
-        fontStyle: 'italic',
         fontWeight: '600',
         width: '174px',
         height: '50px',
-        borderRadius: '8px'
+        color: 'var(--color-white-pri)',
+        border: 'none',
+        borderRadius: '50px',
+        background: 'var(--gradient-btn)'
     }
 
     return (

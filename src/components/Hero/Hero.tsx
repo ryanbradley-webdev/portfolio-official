@@ -4,18 +4,23 @@ import HeroBtn from './HeroBtn'
 export default function Hero() {
     return (
         <section className={styles.section}>
-            <h1>Ryan<br />Bradley</h1>
-            <h2>Web Designer</h2>
-            <h2 style={{ fontWeight: '400' }}>Full Stack Developer</h2>
-            <h2>UI/UX Designer</h2>
-            <div className={styles.heroBtnDiv}>
+
+            <div>
+
+                <h1 className={styles.h1}>
+                    Ryan Bradley
+                </h1>
+
+                <h3 className={styles.h3}>
+                    Full-stack React developer with a focus on <span>functional</span> and <span>interactive</span> web applications
+                </h3>
+
                 <HeroBtn href='#projects'>
-                    See My Work
+                    See my work
                 </HeroBtn>
-                <HeroBtn href='#connect' variant>
-                    Contact Me
-                </HeroBtn>
+
             </div>
+
         </section>
     )
 }

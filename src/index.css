@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Anybody:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Prompt:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
 *,
 *::before,
@@ -10,15 +10,21 @@
 
 :root {
   --color-white-pri: #CBCBCB;
-  --color-white-sec: #888888;
-  --color-white-ter: #555555;
-  --color-teal: #83F1F1;
+  --color-white-sec: #AAAAAA;
+  --color-white-ter: #888888;
+  --color-purple-pri: #8D6EE7;
+  --color-purple-sec: #6A42DC;
+  --color-teal-gradient: #055567;
+  --color-orange-gradient: #5B3528;
+  --color-purple-gradient: #490050;
+  --gradient-btn: linear-gradient(to bottom, var(--color-purple-pri), var(--color-purple-sec));
+  --gradient-main: linear-gradient(to right, var(--color-teal-gradient), var(--color-orange-gradient), var(--color-purple-gradient));
   --color-background: #121212;
 }
 
 html {
   color: var(--color-white-pri);
   background-color: var(--color-background);
-  font-family: 'Anybody';
+  font-family: 'Prompt', 'Arial', 'sans-serif';
   scroll-behavior: smooth;
 }
