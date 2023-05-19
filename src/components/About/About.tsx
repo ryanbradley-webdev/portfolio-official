@@ -1,19 +1,13 @@
-import IconDiv from '../IconDiv/IconDiv'
-import Section from '../Section/Section'
-import SectionHeader from '../Section/SectionHeader'
+import IconDiv from './IconDiv'
 import styles from './About.module.css'
-import Design from './Design'
-import Frameworks from './Frameworks'
-import Languages from './Languages'
-import Services from './Services'
 
 export default function About() {
     return (
-        <Section id='about'>
+        <section id='about' className={styles.section}>
 
-            <SectionHeader>
-                About
-            </SectionHeader>
+            <h2 className={styles.h2}>
+                A little about me...
+            </h2>
 
             <div className={styles.leadingText}>
                 Former <span>Navy Submariner</span> turned <span>Full Stack Developer</span>.
@@ -31,27 +25,15 @@ export default function About() {
                     </p>
                 </div>
 
-                <div className={styles.iconGrid}>
-                    <IconDiv>
-                        <h4>Languages:</h4>
-                        <Languages />
-                    </IconDiv>
-                    <IconDiv>
-                        <h4>Frameworks:</h4>
-                        <Frameworks />
-                    </IconDiv>
-                    <IconDiv>
-                        <h4>Services:</h4>
-                        <Services />
-                    </IconDiv>
-                    <IconDiv>
-                        <h4>Design:</h4>
-                        <Design />
-                    </IconDiv>
+                <div className={styles.technologies}>
+                    <p>
+                        Technologies I use:
+                    </p>
+                    <IconDiv />
                 </div>
 
             </div>
 
-        </Section>
+        </section>
     )
 }

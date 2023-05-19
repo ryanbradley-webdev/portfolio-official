@@ -1,31 +1,41 @@
-.leadingText {
-    font-size: 24px;
-    font-weight: 300;
+.section {
+    padding-block: 60px;
 }
 
-@media screen and (min-width: 481px) {
-    .leadingText {
-        width: fit-content;
-        margin-inline: auto;
-    }
+.h2 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.h2::after {
+    position: absolute;
+    content: '';
+    bottom: 0.3em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, transparent 10%, #0B3C47 20%, #5A3529, #410446 80%, transparent 90%);
+    isolation: isolate;
+    z-index: -1;
+}
+
+.leadingText {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
 }
 
 .leadingText span {
     font-weight: 400;
 }
 
-@media screen and (min-width: 481px) {
-    .container {
-        max-width: 600px;
-        margin-inline: auto;
-    }
-}
+.container {
 
-@media screen and (min-width: 769px) {
-    .container {
-        display: flex;
-        flex-direction: row-reverse;
-    }
 }
 
 .mainText {
@@ -38,41 +48,24 @@
     margin-bottom: 16px;
 }
 
+.technologies {
+    width: min-content;
+    margin-inline: auto;
+}
+
 .iconGrid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 16px;
-    margin-inline: auto;
+    margin-top: 20px;
+}
+
+.iconGrid img {
+    width: 42px;
 }
 
 @media screen and (min-width: 481px) {
     .iconGrid {
         width: fit-content;
-    }
-}
-
-.threeByThreeGrid,
-.twoByTwoGrid {
-    display: grid;
-    gap: 12px;
-    width: fit-content;
-    margin-inline: auto 0;
-    margin-top: 16px;
-}
-
-.threeByThreeGrid {
-    grid-template-columns: repeat(3, 24px);
-}
-
-.twoByTwoGrid {
-    grid-template-columns: repeat(2, 24px);
-}
-
-@media screen and (min-width: 481px) {
-    .threeByThreeGrid,
-    .twoByTwoGrid {
-        gap: 16px;
-        margin-inline: auto 8px;
     }
 }
