@@ -1,6 +1,7 @@
 .section {
-  background: var(--gradient-main);
+  padding-inline: 16px;
   text-align: center;
+  background: var(--gradient-main);
 }
 
 .hero {
@@ -8,14 +9,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 70vh;
+  height: 60vh;
 }
 
 .hero::after {
   content: '';
   position: absolute;
   inset: 0 -25%;
-  background: radial-gradient(100% 100% at top, var(--color-background) 85%, transparent);
+  background: radial-gradient(100% 100% at top, var(--color-background) 75%, transparent);
   z-index: 1;
 }
 
@@ -69,7 +70,7 @@
   background: transparent;
   overflow: hidden;
   cursor: pointer;
-  transition: color 0.3s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 .heroBtn div {
@@ -82,7 +83,7 @@
   background: var(--gradient);
   isolation: isolate;
   z-index: -1;
-  transition: top 0.3s ease-in-out;
+  transition: top 0.2s ease-in-out;
 }
 
 .heroBtn:is(:hover, :focus) {
@@ -93,16 +94,35 @@
   top: -150%;
 }
 
+.subheroContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.divider {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, transparent, var(--color-white-pri), transparent);
+}
+
 .subhero {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  height: 200px;
 }
 
 .subhero svg {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 200px;
   isolation: isolate;
   z-index: -1;
   opacity: 0.25;
-  filter: blur(5px);
+  filter: blur(2px);
 }

@@ -26,7 +26,7 @@ export default function Hero() {
 
             </div>
 
-            <div>
+            <div className={styles.subheroContainer}>
 
                 <div className={styles.subhero}>
                     <React />
@@ -36,6 +36,8 @@ export default function Hero() {
                     </p>
                 </div>
 
+                <div className={styles.divider}></div>
+
                 <div className={styles.subhero}>
                     <Node />
                     <h4>Back End Development</h4>
@@ -43,6 +45,8 @@ export default function Hero() {
                         I use Node.js, Java, and Python to create back-end architectures using REST-ful API practices, as well as integrating back-end into application design through frameworks such as Next.js and Astro.
                     </p>
                 </div>
+
+                <div className={styles.divider}></div>
 
                 <div className={styles.subhero}>
                     <Google />
