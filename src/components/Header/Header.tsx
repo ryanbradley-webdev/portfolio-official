@@ -4,6 +4,7 @@ import Github from '../../assets/Github'
 import Linkedin from '../../assets/Linkedin'
 import NavLink from '../NavLink/NavLink'
 import Burger from './Burger'
+import Logo from '../../assets/Logo'
 import styles from './Header.module.css'
 
 export default function Header() {
@@ -21,6 +22,7 @@ export default function Header() {
 
     return (
         <header className={styles.header}>
+            <Logo />
             <Burger onClick={toggleMenu} />
             <nav className={styles.menu} style={{ right: menuTransform() }}>
                 <NavLink href='#about' onClick={toggleMenu}>
