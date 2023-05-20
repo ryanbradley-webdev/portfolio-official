@@ -19,12 +19,14 @@ export default function Header() {
         const listener = () => {
             if (window.innerWidth >= 1024) {
                 setMenuVisible(true)
+            } else {
+                setMenuVisible(false)
             }
         }
 
-        window.addEventListener('change', listener)
+        window.addEventListener('resize', listener)
 
-        return () => window.removeEventListener('change', listener)
+        return () => window.removeEventListener('resize', listener)
     }, [])
 
     return (
