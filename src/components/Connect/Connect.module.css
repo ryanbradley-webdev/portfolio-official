@@ -36,7 +36,7 @@
 .link {
     font-style: italic;
     font-weight: 600;
-    color: var(--color-teal);
+    color: var(--color-purple-pri);
     text-decoration: none;
 }
 
@@ -55,6 +55,8 @@
 
 .form input,
 .form textarea {
+    font-size: 20px;
+    color: var(--color-white-pri);
     background-color: #333333;
     border: none;
     border-radius: 0;
@@ -69,7 +71,7 @@
     font-size: 20px;
     font-style: italic;
     font-weight: 200;
-    color: #AAAAAA;
+    color: var(--color-white-ter);
 }
 
 .form input {
@@ -93,12 +95,15 @@
 }
 
 .form button {
-    width: 200px;
-    height: 50px;
+    width: 300px;
+    padding: 16px;
     justify-self: center;
-    font-size: 24px;
-    color: var(--color-teal);
-    background: var(--color-background);
-    border: 1px solid var(--color-teal);
-    border-radius: 8px;
+    margin-top: 16px;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-white-pri);
+    background: var(--gradient-btn);
+    border: none;
+    border-radius: 100px;
 }

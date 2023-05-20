@@ -21,7 +21,7 @@ export default function Connect() {
         <section id="connect">
             
             <h2>
-                Connect
+                Let's get in touch
             </h2>
 
             <div className={styles.container}>
