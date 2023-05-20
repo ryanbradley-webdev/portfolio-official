@@ -6,7 +6,7 @@ export default function About() {
         <section id='about' className={styles.section}>
 
             <h2 className={styles.h2}>
-                A little about me...
+               <span> A little about me...</span>
             </h2>
 
             <div className={styles.leadingText}>

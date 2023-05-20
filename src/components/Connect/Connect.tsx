@@ -1,5 +1,3 @@
-import Section from "../Section/Section";
-import SectionHeader from "../Section/SectionHeader";
 import styles from './Connect.module.css'
 
 export default function Connect() {
@@ -20,11 +18,11 @@ export default function Connect() {
     }
 
     return (
-        <Section id="connect">
+        <section id="connect">
             
-            <SectionHeader>
+            <h2>
                 Connect
-            </SectionHeader>
+            </h2>
 
             <div className={styles.container}>
 
@@ -71,6 +69,6 @@ export default function Connect() {
 
             </div>
 
-        </Section>
+        </section>
     )
 }

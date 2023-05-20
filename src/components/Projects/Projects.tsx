@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import Section from '../Section/Section'
-import SectionHeader from '../Section/SectionHeader'
 import Selector from './Selector'
 import React from '/react.png'
 import Ts from '/ts.png'
@@ -19,11 +17,11 @@ export default function Projects() {
     )
 
     return (
-        <Section id='projects'>
+        <section id='projects'>
 
-            <SectionHeader>
-                Projects
-            </SectionHeader>
+            <h2 className={styles.h2}>
+                Selected Projects
+            </h2>
 
             <div className={styles.selectorDiv}>
                 
@@ -47,8 +45,6 @@ export default function Projects() {
                     </div>
                 </Selector>
 
-                <hr />
-
                 <Selector 
                     name='Content Management System' 
                     activeSelector={activeSelector} 
@@ -65,8 +61,6 @@ export default function Projects() {
                     </div>
                 </Selector>
 
-                <hr />
-
                 <Selector 
                     name='eCommerce Site' 
                     activeSelector={activeSelector} 
@@ -76,8 +70,6 @@ export default function Projects() {
                 >
                     
                 </Selector>
-
-                <hr />
 
                 <Selector 
                     name='Invoice Tracker' 
@@ -94,6 +86,6 @@ export default function Projects() {
                 To see more of my work, visit me on <GitHub />.
             </h5>
 
-        </Section>
+        </section>
     )
 }
