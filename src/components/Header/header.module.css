@@ -72,6 +72,7 @@
 .burgerDiv {
     position: relative;
     width: 27px;
+    transition: all 0.3s ease-in-out;
 }
 
 .burgerDiv::before,
@@ -79,16 +80,35 @@
     position: absolute;
     content: '';
     width: 20px;
+    transition: all 0.3s ease-in-out;
 }
 
 .burgerDiv::before {
     left: 0;
     top: -8px;
+    transform-origin: right;
 }
 
 .burgerDiv::after {
     right: 0;
     top: 8px;
+    transform-origin: left;
+}
+
+.header:has(.menu[aria-expanded="true"]) .burgerDiv {
+    rotate: 45deg;
+}
+
+.header:has(.menu[aria-expanded="true"]) .burgerDiv::before {
+    rotate: 90deg;
+    top: 6px;
+    left: -7px;
+}
+
+.header:has(.menu[aria-expanded="true"]) .burgerDiv::after {
+    rotate: 90deg;
+    top: -6px;
+    right: -6px;
 }
 
 .menu {
