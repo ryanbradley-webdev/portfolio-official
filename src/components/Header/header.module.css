@@ -1,14 +1,19 @@
 .header {
     position: fixed;
     top: 0;
-    padding: 16px;
+    padding: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 53px;
     width: 100%;
-    background: var(--color-background);
+    background: var(--color-background-faded);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     z-index: 10;
+}
+
+.header > svg {
+    height: 30px;
 }
 
 @media screen and (min-width: 481px) {
@@ -48,6 +53,7 @@
     background: none;
     border: none;
     cursor: pointer;
+    z-index: 10;
 }
 
 @media screen and (min-width: 481px) {
@@ -77,24 +83,30 @@
 
 .burgerDiv::before {
     left: 0;
-    top: -7px;
+    top: -8px;
 }
 
 .burgerDiv::after {
     right: 0;
-    top: 7px;
+    top: 8px;
 }
 
 .menu {
     position: fixed;
-    top: 53px;
+    top: 0;
+    right: -230px;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    height: calc(100vh - 53px);
-    padding: 2rem 3rem;
+    height: 100vh;
+    padding-inline: 48px;
+    padding-top: 78px;
     background: var(--color-background);
     transition: right 0.2s ease-in-out;
+}
+
+.menu[aria-expanded="true"] {
+    right: 0
 }
 
 @media screen and (min-width: 481px) {

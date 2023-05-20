@@ -20,6 +20,7 @@
   --gradient-btn: linear-gradient(to bottom, var(--color-purple-pri), var(--color-purple-sec));
   --gradient-main: linear-gradient(120deg, var(--color-teal-gradient) 30%, var(--color-orange-gradient), var(--color-purple-gradient));
   --color-background: #121212;
+  --color-background-faded: #12121233;
 }
 
 html {

@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { getWindowWidth } from '../../util/functions'
+import { useEffect, useState } from 'react'
 import Github from '../../assets/Github'
 import Linkedin from '../../assets/Linkedin'
 import NavLink from '../NavLink/NavLink'
@@ -8,23 +7,31 @@ import Logo from '../../assets/Logo'
 import styles from './Header.module.css'
 
 export default function Header() {
-    const [menuVisible, setMenuVisible] = useState(false)
-
-    const menuTransform = () => {
-        const width = getWindowWidth()
-        if (width > 480) return '0'
-        return menuVisible ? '0' : '-230px'
-    }
+    const [menuVisible, setMenuVisible] = useState(window.innerWidth >= 1024)
 
     const toggleMenu = () => {
-        setMenuVisible(!menuVisible)
+        if (window.innerWidth < 1024) {
+            setMenuVisible(!menuVisible)
+        }
     }
+
+    useEffect(() => {
+        const listener = () => {
+            if (window.innerWidth >= 1024) {
+                setMenuVisible(true)
+            }
+        }
+
+        window.addEventListener('change', listener)
+
+        return () => window.removeEventListener('change', listener)
+    }, [])
 
     return (
         <header className={styles.header}>
             <Logo />
             <Burger onClick={toggleMenu} />
-            <nav className={styles.menu} style={{ right: menuTransform() }}>
+            <nav className={styles.menu} aria-expanded={menuVisible} id='menu'>
                 <NavLink href='#about' onClick={toggleMenu}>
                     About
                 </NavLink>
