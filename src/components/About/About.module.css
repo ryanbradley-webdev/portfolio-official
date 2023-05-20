@@ -1,15 +1,9 @@
 .section {
-    padding-block: 60px;
-    background: linear-gradient(var(--color-background) 90%, #06546621);
+    background: linear-gradient(var(--color-background) 80%, #06546633);
 }
 
 .h2 {
     position: relative;
-    font-size: 32px;
-    font-weight: 400;
-    letter-spacing: -0.03em;
-    text-align: center;
-    margin-bottom: 50px;
     isolation: isolate;
 }
 

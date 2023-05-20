@@ -1,11 +1,12 @@
-.h2 {
-    text-align: center;
+.section {
+    background: linear-gradient(var(--color-background) 80%, #5B352833);
 }
 
 .h5 {
-    margin-block: 24px;
+    margin-block: 40px;
     font-size: 16px;
     font-weight: 200;
+    text-align: center;
 }
 
 @media screen and (min-width: 481px) {
@@ -17,7 +18,7 @@
 .link {
     text-decoration: none;
     font-style: italic;
-    color: var(--color-teal);
+    color: var(--color-purple-pri);
     font-weight: 400;
 }
 
@@ -29,6 +30,10 @@
     .selectorDiv {
         max-width: 600px;
     }
+}
+
+.selector {
+    margin-block: 12px;
 }
 
 .selector * {
@@ -59,6 +64,8 @@
 
 .iconDiv {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 12px;
     margin-block: 16px;
 }
@@ -82,6 +89,7 @@
     flex-direction: column;
     gap: 16px;
     align-items: center;
+    margin-block: 32px;
 }
 
 @media screen and (min-width: 481px) {
@@ -91,12 +99,17 @@
     }
 }
 
-.btnDiv button {
-    width: 130px;
-    height: 35px;
+.linkBtn {
+    text-decoration: none;
+}
+
+.linkBtn button {
+    width: 150px;
+    height: 50px;
     font-size: 16px;
-    color: var(--color-teal);
+    font-family: inherit;
+    color: var(--color-white-pri);
     background-color: var(--color-background);
-    border: 1px solid var(--color-teal);
+    border: 1px solid var(--color-purple-pri);
     border-radius: 8px;
 }
