@@ -36,6 +36,10 @@
     margin-block: 12px;
 }
 
+.selector label {
+    cursor: pointer;
+}
+
 .selector * {
     transition: all 0.3s ease;
 }

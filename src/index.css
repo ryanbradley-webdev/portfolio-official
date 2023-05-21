@@ -32,3 +32,7 @@ html {
   font-family: 'Prompt', 'Arial', 'sans-serif';
   scroll-behavior: smooth;
 }
+
+button {
+  cursor: pointer;
+}
