@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react'
-import Github from '../../assets/Github'
-import Linkedin from '../../assets/Linkedin'
-import NavLink from '../NavLink/NavLink'
+import NavLink from './NavLink'
 import Burger from './Burger'
 import Logo from '../../assets/Logo'
 import styles from './Header.module.css'
@@ -40,17 +38,15 @@ export default function Header() {
                 <NavLink href='#projects' onClick={toggleMenu}>
                     Projects
                 </NavLink>
-                <NavLink href='#connect' onClick={toggleMenu}>
-                    Connect
+                <NavLink href='https://github.com/ryanbradley-webdev' external onClick={toggleMenu}>
+                    GitHub
                 </NavLink>
-                <div className={styles.iconDiv}>
-                    <NavLink href='https://github.com/ryanbradley-webdev' external onClick={toggleMenu}>
-                        <Github className={styles.icon} />
-                    </NavLink>
-                    <NavLink href='https://www.linkedin.com/in/ryanbradley-webdev/' external onClick={toggleMenu}>
-                        <Linkedin className={styles.icon} />
-                    </NavLink>
-                </div>
+                <NavLink href='https://www.linkedin.com/in/ryanbradley-webdev/' external onClick={toggleMenu}>
+                    LinkedIn
+                </NavLink>
+                <NavLink href='#connect' onClick={toggleMenu}>
+                    <button>Get In Touch</button>
+                </NavLink>
             </nav>
         </header>
     )

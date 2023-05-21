@@ -5,7 +5,7 @@ import styles from './Connect.module.css'
 export default function Connect() {
     const [messageSending, setMessageSending] = useState(false)
     const [messageSent, setMessageSent] = useState(false)
-    const [messageError, setMessageError] = useState(true)
+    const [messageError, setMessageError] = useState(false)
     const [buttonMessage, setButtonMessage] = useState('Submit')
 
     const nameRef = useRef<HTMLInputElement>(null)
