@@ -75,7 +75,7 @@ export default function Connect() {
     }, [messageSending, messageSent, messageError])
 
     return (
-        <section id="connect">
+        <section id="connect" className={styles.section}>
             
             <h2>
                 Let's get in touch
@@ -103,17 +103,14 @@ export default function Connect() {
                     <label htmlFor="name">
                         Name
                         <input type="text" id="name" name="name" placeholder="John Doe" ref={nameRef} required />
-                        <div className={styles.inputUnderline}></div>
                     </label>
                     <label htmlFor="email">
                         Email
                         <input type="email" id="email" name="email" placeholder="johndoe@example.com" ref={emailRef} required />
-                        <div className={styles.inputUnderline}></div>
                     </label>
                     <label htmlFor="subject">
                         Subject
                         <input type="text" id="subject" name="subject" placeholder="Enter your subject here" ref={subjectRef} required />
-                        <div className={styles.inputUnderline}></div>
                     </label>
                     <label htmlFor="message">
                         Message
