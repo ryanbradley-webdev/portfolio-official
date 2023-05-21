@@ -31,23 +31,27 @@ export default function Header() {
         <header className={styles.header}>
             <Logo />
             <Burger onClick={toggleMenu} />
-            <nav className={styles.menu} aria-expanded={menuVisible} id='menu'>
-                <NavLink href='#about' onClick={toggleMenu}>
-                    About
-                </NavLink>
-                <NavLink href='#projects' onClick={toggleMenu}>
-                    Projects
-                </NavLink>
-                <NavLink href='https://github.com/ryanbradley-webdev' external onClick={toggleMenu}>
-                    GitHub
-                </NavLink>
-                <NavLink href='https://www.linkedin.com/in/ryanbradley-webdev/' external onClick={toggleMenu}>
-                    LinkedIn
-                </NavLink>
-                <NavLink href='#connect' onClick={toggleMenu}>
-                    <button>Get In Touch</button>
-                </NavLink>
-            </nav>
+            <div className={styles.menu} aria-expanded={menuVisible}>
+                <nav className={styles.nav} id='menu'>
+                    <NavLink href='#about' onClick={toggleMenu}>
+                        About
+                    </NavLink>
+                    <NavLink href='#projects' onClick={toggleMenu}>
+                        Projects
+                    </NavLink>
+                    <NavLink href='https://github.com/ryanbradley-webdev' external onClick={toggleMenu}>
+                        GitHub
+                    </NavLink>
+                    <NavLink href='https://www.linkedin.com/in/ryanbradley-webdev/' external onClick={toggleMenu}>
+                        LinkedIn
+                    </NavLink>
+                    <NavLink href='#connect' onClick={toggleMenu}>
+                        <button>Get In Touch</button>
+                    </NavLink>
+
+                    <Logo />
+                </nav>
+            </div>
         </header>
     )
 }

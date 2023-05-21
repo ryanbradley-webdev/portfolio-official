@@ -3,6 +3,11 @@
   overflow: hidden;
 }
 
+section {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
 section:not(:first-of-type) {
   padding-inline: 16px;
   padding-block: 78px;
