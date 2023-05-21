@@ -94,7 +94,9 @@
     padding-block: 6px;
 }
 
-.form button {
+.formBtn {
+    position: relative;
+    overflow: hidden;
     width: 300px;
     padding: 16px;
     justify-self: center;
@@ -106,4 +108,10 @@
     background: var(--gradient-btn);
     border: none;
     border-radius: 100px;
+}
+
+.formBtn div {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.276);
 }
