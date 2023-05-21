@@ -10,7 +10,7 @@ export default function About() {
             </h2>
 
             <div className={styles.leadingText}>
-                Former <span>Navy Submariner</span> turned <span>Full Stack Developer</span>.
+                Former Navy Submariner turned Full Stack Developer.
             </div>
 
             <div className={styles.container}>

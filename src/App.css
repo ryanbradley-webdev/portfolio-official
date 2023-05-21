@@ -11,7 +11,6 @@ section {
 section:not(:first-of-type) {
   padding-inline: 16px;
   padding-block: 78px;
-  margin-bottom: 40px;
 }
 
 h2 {

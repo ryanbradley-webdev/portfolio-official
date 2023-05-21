@@ -2,6 +2,14 @@
     background: linear-gradient(var(--color-background) 80%, #06546633);
 }
 
+@media screen and (min-width: 1024px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .h2 {
     position: relative;
     isolation: isolate;
@@ -24,18 +32,40 @@
 
 .leadingText {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 200;
     text-align: center;
 }
 
-.leadingText span {
-    font-weight: 400;
+@media screen and (min-width: 769px) {
+    .container {
+        max-width: 800px;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        flex-grow: 1;
+    }
 }
 
 .mainText {
     margin-block: 42px;
     margin-inline: auto;
     line-height: 20px;
+    max-width: 60ch;
+}
+
+@media screen and (min-width: 1024px) {
+    .mainText {
+        margin: 0;
+        max-width: 70ch;
+    }
 }
 
 .mainText p:first-child {
