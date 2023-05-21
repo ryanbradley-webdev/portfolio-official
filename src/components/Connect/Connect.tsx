@@ -81,13 +81,13 @@ export default function Connect() {
                 Let's get in touch
             </h2>
 
+            <h3 className={styles.h3}>
+                Thanks for viewing my portfolio!
+            </h3>
+
             <div className={styles.container}>
 
                 <div>
-
-                    <h3 className={styles.h3}>
-                        Thanks for viewing my portfolio!
-                    </h3>
 
                     <p className={styles.paragraph}>
                         You can also connect with me on <LinkedIn /> or see the rest of my projects on <GitHub />.
