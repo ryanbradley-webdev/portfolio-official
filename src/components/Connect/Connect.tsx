@@ -40,28 +40,36 @@ export default function Connect() {
 
         axios.post(import.meta.env.VITE_SENDGRID_API_URL, data)
             .then(() => {
+                const form = e.target as HTMLFormElement
+                form.reset()
                 setMessageSending(false)
                 setMessageSent(true)
+                setTimeout(() => {
+                    setMessageSent(false)
+                }, 3000)
             })
             .catch(() => {
                 setMessageSending(false)
                 setMessageError(true)
+                setTimeout(() => {
+                    setMessageError(false)
+                }, 3000)
             })
     }
 
     useEffect(() => {
+
         if (messageSending) {
             setButtonMessage('Sending message...')
-        }
-
-        if (messageSent) {
+        } else if (messageSent) {
             setButtonMessage('Message Sent!')
             setBackground('var(--gradient-btn-success)')
-        }
-
-        if (messageError) {
+        } else if (messageError) {
             setButtonMessage('Something went wrong')
             setBackground('var(--gradient-btn-error)')
+        } else {
+            setButtonMessage('Submit')
+            setBackground('var(--gradient-btn)')
         }
 
     }, [messageSending, messageSent, messageError])
@@ -111,7 +119,12 @@ export default function Connect() {
                         Message
                         <textarea name="message" id="message" cols={30} rows={10} placeholder="Enter your message here" ref={messageRef} required></textarea>
                     </label>
-                    <button type="submit" className={styles.formBtn} style={{ background }}>
+                    <button 
+                        type="submit" 
+                        className={styles.formBtn} 
+                        style={{ background }} 
+                        disabled={messageSending}
+                    >
                         {messageSending && <div></div>}
                         <span>{buttonMessage}</span>
                     </button>
