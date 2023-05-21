@@ -18,6 +18,8 @@
   --color-orange-gradient: #5B3528;
   --color-purple-gradient: #490050;
   --gradient-btn: linear-gradient(to bottom, var(--color-purple-pri), var(--color-purple-sec));
+  --gradient-btn-success: linear-gradient(to bottom, rgb(76, 194, 76), rgb(29, 132, 29));
+  --gradient-btn-error: linear-gradient(to bottom, rgb(208, 67, 67), rgb(147, 27, 27));
   --gradient-main: linear-gradient(120deg, var(--color-teal-gradient) 30%, var(--color-orange-gradient), var(--color-purple-gradient));
   --color-background: #121212;
   --color-background-faded: #12121244;

@@ -105,13 +105,24 @@
     font-size: 20px;
     font-weight: 400;
     color: var(--color-white-pri);
-    background: var(--gradient-btn);
     border: none;
     border-radius: 100px;
 }
 
 .formBtn div {
     position: absolute;
-    inset: 0;
-    background-color: rgba(255, 255, 255, 0.276);
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 200%;
+    background: linear-gradient(to right, transparent, #ffffff4d, transparent);
+    animation: pending 1s ease-in-out infinite alternate;
+}
+
+@keyframes pending {
+    from {
+        left: -100%;
+    } to {
+        left: 100%;
+    }
 }

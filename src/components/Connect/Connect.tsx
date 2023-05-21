@@ -7,6 +7,7 @@ export default function Connect() {
     const [messageSent, setMessageSent] = useState(false)
     const [messageError, setMessageError] = useState(false)
     const [buttonMessage, setButtonMessage] = useState('Submit')
+    const [background, setBackground] = useState('var(--gradient-btn)')
 
     const nameRef = useRef<HTMLInputElement>(null)
     const emailRef = useRef<HTMLInputElement>(null)
@@ -55,10 +56,12 @@ export default function Connect() {
 
         if (messageSent) {
             setButtonMessage('Message Sent!')
+            setBackground('var(--gradient-btn-success)')
         }
 
         if (messageError) {
             setButtonMessage('Something went wrong')
+            setBackground('var(--gradient-btn-error)')
         }
 
     }, [messageSending, messageSent, messageError])
@@ -108,15 +111,9 @@ export default function Connect() {
                         Message
                         <textarea name="message" id="message" cols={30} rows={10} placeholder="Enter your message here" ref={messageRef} required></textarea>
                     </label>
-                    <button type="submit" className={styles.formBtn}>
+                    <button type="submit" className={styles.formBtn} style={{ background }}>
+                        {messageSending && <div></div>}
                         <span>{buttonMessage}</span>
-                        {
-                            (messageSending || messageSent || messageError)
-                            
-                            && 
-                            
-                            <div></div>
-                        }
                     </button>
                 </form>
 
